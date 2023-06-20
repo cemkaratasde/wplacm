@@ -1,0 +1,33 @@
+package de.wwu.wfm.g2.delegate;
+
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+@Component
+public class RetrieveApplicationsDelegate implements JavaDelegate {
+    private static final Logger logger = LoggerFactory.getLogger(RetrieveApplicationsDelegate.class);
+
+    // include services if needed
+    // private final TwitterService twitterService
+    // if so, add constructor.
+
+    @Override
+    public void execute(DelegateExecution execution) throws Exception {
+
+        var list = execution.getVariables();
+        boolean applicationsReceived = false;
+
+
+        // Do stuff
+
+
+        // Important to set applicationsReceived
+        execution.setVariable("applicationsReceived", applicationsReceived);
+        final String message = "This is ProcessInstanceId " + execution.getProcessInstanceId();
+
+        logger.info(message);
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "components": [
+    {
+      "label": "JobSheet",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1p2y0kg",
+        "columns": null
+      },
+      "id": "Field_0ym4ym7",
+      "key": "jobSheet2",
+      "disabled": false
+    },
+    {
+      "label": "Possible Candidates",
+      "type": "checklist",
+      "layout": {
+        "row": "Row_11l7ufe",
+        "columns": null
+      },
+      "id": "Field_1ooa73o",
+      "key": "possibleCandidates",
+      "valuesKey": "possible_candidate_list"
+    }
+  ],
+  "type": "default",
+  "id": "manuallySelectedCandidates",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.10.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.19.0",
+  "schemaVersion": 8
+}

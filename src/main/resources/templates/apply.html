@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" th:href="@{/stylenew.css}">
+<title>WPLACM</title>
+</head>
+<body>
+
+<div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+      <p style="text-align:center;">
+        <img class="formbold-img" th:src ="@{/wwu.png}">
+      </p>
+     <div class="job-details">
+          <br>
+          <h2 th:text="${jobsheet.roleTitle}"></h2>
+          <br>
+          <h3>Job Description</h3> 
+          <br>
+          <p th:text="${jobsheet.jobDescription}"></p>
+      </div>
+      <form th:action="@{/apply}" th:method="post">
+        <div class="formbold-input-flex">
+          <div>
+            <label for="firstname" class="formbold-form-label"> First Name </label>
+            <input type="text" placeholder="Your first name" class="formbold-form-input" th:field="${application.firstName}"/>
+          </div>
+          <div>
+            <label for="lastname" class="formbold-form-label"> Last Name </label>
+            <input type="text" placeholder="Your last name" class="formbold-form-input" th:field="${application.lastName}"/>
+          </div>
+        </div>
+  
+        <div class="formbold-input-flex">
+          <div>
+             <label for="email" class="formbold-form-label"> Email </label>
+             <input type="text" placeholder="example@email.com" class="formbold-form-input" th:field="${application.email}"/>
+          </div>
+          <div>
+            <label for="expected salary" class="formbold-form-label"> Salary Expectation </label>
+            <input type="text" placeholder="anual expection in euros" class="formbold-form-input" th:field="${application.expSalary}"/>
+        </div>
+        </div>
+        
+        <div class="formbold-input-flex">
+          <div>
+              <label for="certificate" class="formbold-form-label"> Certificates </label>
+              <input type="text" placeholder="seperate with comma (,)" class="formbold-form-input" th:field="${application.certificates}"/>
+          </div>
+          <div>
+          <label for="qualification" class="formbold-form-label"> Qualifications </label>
+          <input type="text" placeholder="seperate with comma (,)" class="formbold-form-input" th:field="${application.qualifications}"/>
+          </div>
+       </div>
+        <div class="formbold-mb-3">
+          <label for="message" class="formbold-form-label"> Motivation</label>
+          <textarea rows="3" name="motivation" id="motivation" class="formbold-form-input" th:field="${application.motivation}"></textarea>
+        </div>
+        <div class="formbold-input-flex">
+          <div>
+            <label for="Previous Company 1" class="formbold-form-label"> Previous Company 1 </label>
+            <input type="text" placeholder="Company Name(20xx - 20xx)" class="formbold-form-input" th:field="${cv.previousCompany1}"/>
+          </div>
+          <div>
+            <label for="expected salary" class="formbold-form-label"> Previous Job Title </label>
+            <input type="text" placeholder="Previous Job Title" class="formbold-form-input" th:field="${cv.previousJobTitle1}"/>
+          </div>
+        </div>
+        <div class="formbold-mb-3">
+          <label for="message" class="formbold-form-label"> Job Description</label>
+          <textarea rows="3" name="previousJobDescription1" class="formbold-form-input" th:field="${cv.previousJobDescription1}"></textarea>
+        </div>
+        <div class="formbold-input-flex">
+          <div>
+              <label for="Previous Company 1" class="formbold-form-label"> Previous Company 2 </label>
+              <input type="text" placeholder="Company Name(20xx - 20xx)" class="formbold-form-input" th:field="${cv.previousCompany2}"/>
+          </div>
+          <div>
+            <label for="expected salary" class="formbold-form-label"> Previous Job Title </label>
+            <input type="text" placeholder="Previous Job Title" class="formbold-form-input" th:field="${cv.previousJobTitle2}"/>
+          </div>
+        </div>
+        <div class="formbold-mb-3">
+          <label for="message" class="formbold-form-label"> Job Description</label>
+          <textarea rows="3" name="previousJobDescription2" class="formbold-form-input" th:field="${cv.previousJobDescription2}"></textarea>
+        </div>
+        <button class="formbold-btn">Apply Now</button>
+		</form>
+    </div>
+  </div>
+</body>

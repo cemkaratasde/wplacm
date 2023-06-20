@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Definitions_0s9lpia" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.10.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0">
+  <decision id="invoice_calculation" name="Invoice Amount">
+    <decisionTable id="DecisionTable_11zq5l6" hitPolicy="FIRST">
+      <input id="Input_1" label="Number of Positions filled" biodi:width="192">
+        <inputExpression id="InputExpression_1" typeRef="number">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Payment Percentage per Candidate (Salary)" typeRef="number" />
+      <rule id="DecisionRule_0hx1fsp">
+        <inputEntry id="UnaryTests_1shickw">
+          <text>0</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0rpd8mf">
+          <text>0</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mh9dkc">
+        <inputEntry id="UnaryTests_0barrs2">
+          <text>&lt;=3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sbiwa7">
+          <text>.30</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_16reip2">
+        <inputEntry id="UnaryTests_0xffttq">
+          <text>[4..7]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12emhxz">
+          <text>.25</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0sb1ij5">
+        <inputEntry id="UnaryTests_19ouzjh">
+          <text>&gt;7</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_184kviy">
+          <text>.20</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="invoice_calculation">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

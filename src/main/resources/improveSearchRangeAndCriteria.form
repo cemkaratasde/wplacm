@@ -1,0 +1,47 @@
+{
+  "components": [
+    {
+      "label": "Search range improved?",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_17cfolm",
+        "columns": null
+      },
+      "id": "Field_0ijr2op",
+      "key": "range",
+      "description": "Are all platforms configured for a broader search range?"
+    },
+    {
+      "label": "Job Description",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0o7qius",
+        "columns": null
+      },
+      "id": "Field_0jz7n88",
+      "key": "jobDescription",
+      "description": "What is the job about?",
+      "properties": {}
+    },
+    {
+      "label": "Required Qualifications",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0vzeigd",
+        "columns": null
+      },
+      "id": "Field_1u45agu",
+      "key": "requiredQualifications",
+      "description": "What qualifications are required for this job?"
+    }
+  ],
+  "type": "default",
+  "id": "improveSearchRangeAndCriteria",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.10.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.19.0",
+  "schemaVersion": 8
+}

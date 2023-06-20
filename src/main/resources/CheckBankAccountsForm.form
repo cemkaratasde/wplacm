@@ -1,0 +1,24 @@
+{
+  "components": [
+    {
+      "label": "Check bank accounts",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1uoihhc",
+        "columns": null
+      },
+      "id": "Field_1rc34ox",
+      "key": "checkBankAccounts1",
+      "description": "Was the payment for the application search received?"
+    }
+  ],
+  "type": "default",
+  "id": "checkAccounts",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.10.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.19.0",
+  "schemaVersion": 8
+}

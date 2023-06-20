@@ -1,0 +1,79 @@
+{
+  "components": [
+    {
+      "label": "Job description",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0bre484",
+        "columns": null
+      },
+      "id": "Field_0zjdx3v",
+      "key": "jobDescription",
+      "description": "What is the job about?"
+    },
+    {
+      "label": "Job Information",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0bre484",
+        "columns": null
+      },
+      "id": "Field_1eqw8og",
+      "key": "jobInfo",
+      "disabled": true
+    },
+    {
+      "label": "Role title",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0pch2u3",
+        "columns": null
+      },
+      "id": "Field_1k2xh3z",
+      "key": "roleTitle",
+      "description": "What role does this job offer?"
+    },
+    {
+      "label": "Start date",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_083ak58",
+        "columns": null
+      },
+      "id": "Field_13bhjzv",
+      "key": "startDate",
+      "description": "When does this job start?"
+    },
+    {
+      "label": "Salary range",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0hx0isj",
+        "columns": null
+      },
+      "id": "Field_0rsleir",
+      "key": "salaryRange",
+      "description": "How much does this job offer?"
+    },
+    {
+      "label": "Required qualifications",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0ryr0dy",
+        "columns": null
+      },
+      "id": "Field_0aly8h9",
+      "key": "requiredQualifications",
+      "description": "What qualifications are required for this job?"
+    }
+  ],
+  "type": "default",
+  "id": "jobSheetForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.10.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.19.0",
+  "schemaVersion": 8
+}
